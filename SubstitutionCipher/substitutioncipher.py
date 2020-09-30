@@ -236,14 +236,14 @@ if __name__ == '__main__':
     start = time.time()
     trans = decrypt(cypher_text)
     dt = time.time() - start
-    decrypted_textfile = open("inputfilename-decrypted.txt","w") #Writing the decrypted text to the text file 
+    decrypted_textfile = open("decrypted.txt","w") #Writing the decrypted text to the text file 
     decrypted_textfile.write(translate(cypher_text, trans, case_sensitive=True))
     decrypted_textfile.close()
     print("Please check two text files for output")
     print("Timing: {:.3f} sec".format(dt))
 
     new_dict = dict([(value, key) for key, value in trans.items()]) 
-    key_textfile = open("inputfilename-key.txt","w") #Writing the decrypted key to the text file 
+    key_textfile = open("key.txt","w") #Writing the decrypted key to the text file 
     for k,v in sorted(new_dict.items()):
         key_textfile.write(f"{k.upper()} = {v.upper()}" + "\n")
     key_textfile.close()

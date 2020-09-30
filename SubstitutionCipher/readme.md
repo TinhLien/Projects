@@ -1,3 +1,11 @@
-# Readme for Version-For-Grading folder
+Substitution Cipher project finished in second year,
 
-Here you will place the version of your python program you wish me to grade.
+PROGRAM INSTRUCTIONS:
+
+run the command
+
+python3 substitutioncipher.py <encrypted file-name>
+
+decrypted message will be stored into "decrypted.txt"
+
+decrypted key will be stored into "key.txt"
